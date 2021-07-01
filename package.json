@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-portfolio",
+  "version": "1.0.0",
+  "description": "bootstrap v5 project portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Bootstrap",
+    "portfolio",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Nutz-n-Boltz Web Services",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}
