@@ -12,29 +12,29 @@ The objective of this project was to create a single-page portfolio web template
 * installing Node.js
 * using npm init to create a package.json file \(start time: 4m30s; end time: 6m55s\)
 * installing SASS using the command line:
-    
+```
     npm install --save-dev sass
-
+```
 * installing Bootstrap using the command line:
-    
+```
     npm install bootstrap --save
-
+```
 * installing Font Awesome using the command line:
-
+```
     npm install --save @fortawesome/fontawesome-free
-
+```
 * installing autoprefixer using the command line:
-
+```
     npm install postcss-cli autoprefixer --save
-
+```
 * edit "scripts" in package.json:
-
+```
     "compile:sass": "sass --watch scss:assets/css"
-
+```
 * start the script from the command line:
-
+```
     npm run compile:sass
-
+```
 
 ## Resources and References
 
