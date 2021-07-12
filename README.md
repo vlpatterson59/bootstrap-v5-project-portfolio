@@ -27,6 +27,20 @@ The objective of this project was to create a single-page portfolio web template
 ```
     npm install postcss-cli autoprefixer --save
 ```
+* implement glightbox using links and scripts:
+```
+    <link rel="stylesheet" href="assets/vendor/css/glightbox.min.css">
+    <script src="assets/vendor/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://www.youtube.com/watch?v=1PP-UTlh5wU',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoPlayVideos': 'true',
+        });
+    </script>
+```
 * edit "scripts" in package.json:
 ```
     "compile:sass": "sass --watch scss:assets/css"
@@ -55,6 +69,12 @@ The objective of this project was to create a single-page portfolio web template
 ```
 * use mixins (@mixin *name*) to define styles that can be re-used throughout the stylesheet (use @include *mixin-name* to utilize the mixin where needed)
     * include the mixins file (```@include '../components/mixins' as *;``` in the section file where the mixin is being used 
+* to incorporate Font Awesome icons, create a *fontawesome.scss* file in the scss folder and include each of the brands:
+    * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';```
+    * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';```
+    * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';```
+    * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';```
+* for breakpoints, use ```@include media-breakpoint-up(*size*)``` or ```@include media-breakpoint-down(*size*)```
 * 
 ## Resources and References
 
@@ -62,6 +82,13 @@ The objective of this project was to create a single-page portfolio web template
 * [npm](https://www.npmjs.com/)
 * [SASS](https://www.npmjs.com/package/sass)
 * [Bootstrap](https://getbootstrap.com/)
+    * [Positioning Utilities](https://getbootstrap.com/docs/5.0/utilities/position/)
 * [Font Awesome](https://fontawesome.com/)
+    * Secondary Font (CTA): [Font Awesome 5 Free](https://fontawesome.com/)
 * [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
 * [Theming Kits](https://hackerthemes.com/kit/)
+* [Google Fonts](https://fonts.google.com/)
+    * Primary Font (Section Titles): [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)    
+* [manypixels Free Illustration Gallery](https://www.manypixels.co/gallery)
+* [Get Waves SVG shape generator](https://getwaves.io/)
+* [GLightbox](https://biati-digital.github.io/glightbox/)
