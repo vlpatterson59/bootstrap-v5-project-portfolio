@@ -7,7 +7,7 @@ This project was started June 30, 2021 and completed July 7, 2021.
 The objective of this project was to create a single-page portfolio web template utilizing Bootstrap 5 and SASS. Features include a fixed navigation bar, 'waves' to separate the various sections of the page, button animations, a video library 
 ## Modifications and Enhancements
 
-## Lessons Learned
+## What I Learned
 
 * installing Node.js
 * using npm init to create a package.json file \(start time: 4m30s; end time: 6m55s\)
@@ -35,7 +35,19 @@ The objective of this project was to create a single-page portfolio web template
 ```
     npm run compile:sass
 ```
-
+* create a _custom.scss file in the scss folder for any custom variables
+* import bootstrap.scss into _custom.scss with the following statement:
+```
+    @import "../node_modules/bootstrap/scss/bootstrap.scss";
+```
+* use the _custom.scss file in the style.scss file with the following statement:
+```
+    @use 'custom';
+```
+* Bootstrap SASS variables can be found in node_modules/bootstrap/scss/_variables.scss
+* create subfolders in the scss folder for components and sections
+    * the *components* folder is for animations (_animations.scss), buttons (_buttons.scss), mixins (_mixins.scss), and typography (_typography.scss)
+    * the *sections* folder is for the various web page sections (_navbar.scss, _services.scss, _testimonials.scss, etc)
 ## Resources and References
 
 * [Node.js](https://nodejs.org/en/)
