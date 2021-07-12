@@ -7,6 +7,10 @@ This project was started June 30, 2021 and completed July 7, 2021.
 The objective of this project was to create a single-page portfolio web template utilizing Bootstrap 5 and SASS. Features include a fixed navigation bar, 'waves' to separate the various sections of the page, button animations, a video library 
 ## Modifications and Enhancements
 
+* Services section needs to be modified so that when it appears on small devices, the services shouldn't alternate positions so that two images are in sequence separating the service descriptions
+    ![screenshot of services not alternating properly](images/service-1.png)
+* 
+
 ## What I Learned
 
 * installing Node.js
@@ -75,7 +79,14 @@ The objective of this project was to create a single-page portfolio web template
     * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';```
     * ```@use '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';```
 * for breakpoints, use ```@include media-breakpoint-up(*size*)``` or ```@include media-breakpoint-down(*size*)```
-* 
+* applying a gradient to text:
+```
+    background-image: linear-gradient(to right, $primary, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+```
+
 ## Resources and References
 
 * [Node.js](https://nodejs.org/en/)
