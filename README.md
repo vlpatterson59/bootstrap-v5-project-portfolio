@@ -45,9 +45,17 @@ The objective of this project was to create a single-page portfolio web template
     @use 'custom';
 ```
 * Bootstrap SASS variables can be found in node_modules/bootstrap/scss/_variables.scss
-* create subfolders in the scss folder for components and sections
+* create subfolders in the scss folder for *components* and *sections*
     * the *components* folder is for animations (_animations.scss), buttons (_buttons.scss), mixins (_mixins.scss), and typography (_typography.scss)
     * the *sections* folder is for the various web page sections (_navbar.scss, _services.scss, _testimonials.scss, etc)
+* import the component files and section files into styles.scss using @use 'folder/filename'
+* in each of the sections files, import the _custom.scss file using:
+```
+   @use '../custom' as *;
+```
+* use mixins (@mixin *name*) to define styles that can be re-used throughout the stylesheet (use @include *mixin-name* to utilize the mixin where needed)
+    * include the mixins file (```@include '../components/mixins' as *;``` in the section file where the mixin is being used 
+* 
 ## Resources and References
 
 * [Node.js](https://nodejs.org/en/)
