@@ -13,8 +13,11 @@ The objective of this project was to create a single-page portfolio web template
 
 * Implement filtering with the buttons in the *Latest Projects* section
 
-    ![screenshot of filtering buttons](images/filter-buttons.jpg)
+    ![screenshot of filtering buttons](images/filter-buttons.png)
 
+* Implement a *Clear Form* button for the CTA form
+* Implement functionality of the menu items in the navbar
+* Identify places where PHP can be used
 ## What I Learned
 
 * installing Node.js
@@ -107,3 +110,4 @@ The objective of this project was to create a single-page portfolio web template
 * [manypixels Free Illustration Gallery](https://www.manypixels.co/gallery)
 * [Get Waves SVG shape generator](https://getwaves.io/)
 * [GLightbox](https://biati-digital.github.io/glightbox/)
+* [Tabler Icons](https://tablericons.com/)
