@@ -13,7 +13,7 @@ The objective of this project was to create a single-page portfolio web template
 
 * Implement filtering with the buttons in the *Latest Projects* section
 
-    ![screenshot of filtering buttons](images/filter-buttons.png)
+    ![screenshot of filtering buttons](images/filter-buttons.jpg)
 
 ## What I Learned
 
