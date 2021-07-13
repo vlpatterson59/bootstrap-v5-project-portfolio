@@ -8,8 +8,12 @@ The objective of this project was to create a single-page portfolio web template
 ## Modifications and Enhancements
 
 * Services section needs to be modified so that when it appears on small devices, the services shouldn't alternate positions so that two images are in sequence separating the service descriptions
+
     ![screenshot of services not alternating properly](images/service-1.png)
-* 
+
+* Implement filtering with the buttons in the *Latest Projects* section
+
+    ![screenshot of filtering buttons](images/filter-buttons.png)
 
 ## What I Learned
 
